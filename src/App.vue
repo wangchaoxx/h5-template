@@ -7,4 +7,9 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div {
+  color: sandybrown;
+  font-size: 16px;
+}
+</style>
