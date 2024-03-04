@@ -24,7 +24,7 @@ jobs: # CI 要执行的任务
     # 命名这个任务为发布Deploy
     # 注意这个步骤中使用的 secrets.xxx 变量都是在 GitHub 仓库中配置的,下文中有配置讲解
     - name: Deploy
-      uses: cross-the-world/ssh-scp-ssh-pipelines@main # 使用 ssh 上传工具将代码上传至服务器
+      uses: cross-the-world/ssh-scp-ssh-pipelines@master # 使用 ssh 上传工具将代码上传至服务器
       env:
         WELCOME: "ssh scp ssh pipelines"
         LASTSSH: "Doing something after copying"
