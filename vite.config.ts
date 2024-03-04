@@ -26,4 +26,11 @@ export default defineConfig({
       vueTemplate: true,
     })
   ],
+  css: {
+    preprocessorOptions: {
+      less: {
+        math: "always",
+      },
+    }
+  },
 })
