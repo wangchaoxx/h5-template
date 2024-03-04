@@ -8,12 +8,6 @@ on:
       - main
 
 # 开始任务
-
-jobs:
-  deployment:
-    runs-on: ubuntu-latest
-    environment: production
-
 jobs:
   build:
     runs-on: ubuntu-latest
