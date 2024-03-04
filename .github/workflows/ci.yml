@@ -18,8 +18,8 @@ jobs: # CI 要执行的任务
     # 打包构建
     - name: Build
       uses: actions/setup-node@master # 在当前系统下使用 node 环境，这里可以切换node 环境
-    - run: npm install # run 为在系统在执行该命令
-    - run: npm run build
+    - run: pnpm install # run 为在系统在执行该命令
+    - run: pnpm run build
 
     # 命名这个任务为发布Deploy
     # 注意这个步骤中使用的 secrets.xxx 变量都是在 GitHub 仓库中配置的,下文中有配置讲解
