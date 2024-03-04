@@ -1,12 +1,12 @@
 # 建立一个名为CI的工作流
 name: CI
-​
+
 # 监听 master上的push事件
 on:
   push:
-   branches: 
-    - main
-​
+    branches:
+      - main
+
 # 开始任务
 jobs:
  # 建立一个名为 build 的job
