@@ -3,6 +3,7 @@ on: # 此CI/CD触发时的事件
   push: # 在代码提交时自动触发，同样也可以指定在 打 tag、release、pull_request、定时、某个文件变动、仓库被start 时触发
     branches:
       - main
+      - pull_request
 
 jobs: # CI 要执行的任务
   build-and-deploy: # 要执行任务的名字这个名字可以随便改 job1、job2... 都行
@@ -13,7 +14,7 @@ jobs: # CI 要执行的任务
     # uses 的作用是使用另一个仓库的代码，如下
     # uses: actions/checkout@master 使用 actions 用户的 checkout 仓库的 master
     - name: Checkout # 步骤的名字，可以不写
-      uses: actions/checkout@main # 下载仓库的代码
+      uses: actions/checkout@master # 下载仓库的代码
 
     # 打包构建
     - name: Build
